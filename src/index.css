@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@theme {
+  /* Define your color palette */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Primary colors */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  
+  /* Purple for gradients */
+  --color-purple-500: #8b5cf6;
+  --color-purple-600: #7c3aed;
+  
+  /* Define custom gradients */
+  --gradient-to-br-gray: linear-gradient(to bottom right, var(--color-gray-50), var(--color-gray-100));
+  --gradient-to-br-gray-dark: linear-gradient(to bottom right, var(--color-gray-900), var(--color-gray-800));
+  --gradient-to-br-primary-purple: linear-gradient(to right, var(--color-primary-600), var(--color-purple-600));
+}
+
+/* Custom utility classes */
+@utility card {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  
+  @media (prefers-color-scheme: dark) {
+    @apply bg-gray-800;
+  }
+}
+
+/* Base styles */
+@layer base {
+  body {
+    background: whitesmoke;
+    color: #111827;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
