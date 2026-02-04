@@ -11,6 +11,7 @@ const Navbar = () => {
     { to: '/', label: 'Home', icon: <FaHome /> },
      { to: '/repositories', label: 'Repositories', icon: <FiFolder /> },
     { to: '/skills', label: 'Skills', icon: <FiTool /> },
+    { to: '/resume', label: 'Resume', icon: <FiFolder /> },
     { to: '/about', label: 'About', icon: <FiUser /> },
     { to: '/contact', label: 'Contact', icon: <FiMail /> },
     { to: '/admin', label: 'Admin', icon: <FiSettings /> },
@@ -22,8 +23,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full"> <img src="https://i.ibb.co/KxnXs1qx/rrrr.jpg" alt="Ezra" className="w-full h-full rounded-full object-cover" /></div>
-            <span className="text-xl font-bold text-gray-900">Ezra Ndege</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full"> <img src="https://i.ibb.co/KxnXs1qx/rrrr.jpg" alt="Dezmils Tech Company" className="w-full h-full rounded-full object-cover" /></div>
+            <span className="text-xl text-cyan-500 font-semibold ">CEO</span>
+            <span className="text-xl font-bold text-gray-900">Dezmils Tech Company</span>
           </NavLink>
 
           {/* Desktop Navigation */}

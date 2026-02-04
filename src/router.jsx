@@ -11,6 +11,7 @@ import Contact from "./pages/Contact.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import PrivacyPolicy from "./components/Legal/PrivacyPolicy.jsx"
 import TermsAndConditions from "./components/Legal/TermsAndConditions.jsx";
+import Resume from "./pages/resume/Resume.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
       { path: "privacy-policy", element: <PrivacyPolicy /> },
       { path: "terms-and-conditions", element: <TermsAndConditions /> },
+      { path: "resume", element: <Resume /> }
     ],
   },
 ]);
