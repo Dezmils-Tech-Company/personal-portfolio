@@ -25,7 +25,8 @@ const Layout = () => {
         <main
           className="
             flex-1 flex flex-col 
-            bg-gray-900 
+             bg-gray-800 border-l border-gray-700 rounded-xl shadow-lg
+            mx-2
             p-3 sm:p-4 md:p-6 
             sm:ml-2 md:ml-4 
             rounded-lg shadow-inner

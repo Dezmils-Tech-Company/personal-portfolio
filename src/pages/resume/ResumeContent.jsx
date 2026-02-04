@@ -1,6 +1,6 @@
 const ResumeContent = () => {
   return (
-    <main className="h-full flex flex-col items-center justify-start p-8" >
+    <main className="h-full flex flex-col items-center justify-start p-4" >
       <h2 className="text-3xl font-bold text-gray-800 mb-8">Resume</h2>
 
       {/* Education */}

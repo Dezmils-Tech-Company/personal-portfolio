@@ -1,4 +1,5 @@
 import { FiMail, FiPhone, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaPhone } from "react-icons/fa";
 
 const ProfileSidebar = () => {
   return (
@@ -14,24 +15,36 @@ const ProfileSidebar = () => {
       {/* Contact Info */}
       <div className="space-y-3 text-gray-300">
         <div className="flex items-center gap-2">
-          <div className="text-2xl bg-orange-500/5 p-2 border border-orange-500 rounded-xl"><FiMail /></div>
-          <div className="border-l-2 rounded-">
+          <div className="text-xl bg-orange-500/5 p-1 border border-orange-500 rounded-xl"><FiMail /></div>
+          <div className="border-l-2 border-orange-500 rounded-l-sm pl-2">
             <p>Email</p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center text-sm text-cyan-500 gap-2">
           Ndegeezra05@gmail.com
-        </p></div>
-          
+         </p></div> 
         </div>
         
-        <p className="flex items-center gap-2">
-          <FiPhone /> +254 712 310 100
-        </p>
-        <p className="flex items-center gap-2">
-          <FiGithub /> github.com/Dezmils-Tech-Company
-        </p>
-        <p className="flex items-center gap-2">
-          <FiLinkedin /> linkedin.com/in/ezra-ndege
-        </p>
+        <div className="flex items-center gap-2">
+          <div className="text-xl bg-orange-500/5 p-1 border border-orange-500 rounded-xl"><FiPhone /></div>
+          <div className="border-l-2 border-orange-500 rounded-l-sm pl-2">
+            <p>Phone</p>
+          <p className="flex items-center text-sm text-cyan-500 gap-2">
+          071 231 0100
+         </p></div> 
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="text-xl bg-orange-500/5 p-1 border border-orange-500 rounded-xl"><FiGithub /></div>
+          <div className="border-l-2 border-orange-500 rounded-l-sm pl-2">
+            <p>GitHub</p>
+          <a href="https://github.com/Dezmils-Tech-Company" target="_blank" rel="noopener noreferrer" className="text-sm text-cyan-400 hover:underline">View Profile</a>
+          </div> 
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="text-xl bg-orange-500/5 p-1 border border-orange-500 rounded-xl"><FiLinkedin /></div>
+          <div className="border-l-2 border-orange-500 rounded-l-sm pl-2">
+            <p>LinkedIn</p>
+          <a href="https://www.linkedin.com/in/ezra-ndege-578906317?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BoYR%2B%2FqViSAG4QElXD3IeKw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-sm text-cyan-400 hover:underline">View Profile</a>
+          </div> 
+        </div>
       </div>
 
       {/* Download Resume */}
