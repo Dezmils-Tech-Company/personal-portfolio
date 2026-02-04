@@ -96,3 +96,14 @@ export const fetchStats = async (username = 'Dezmils-Tech-Company') => {
     }
   }
 }
+
+// Fetch a single repo by name
+export const getRepoDetails = async (username, repoName) => {
+  try {
+    const res = await axios.get(`https://api.github.com/repos/${username}/${repoName}`);
+    return res.data;
+  } catch (err) {
+    console.error('Error fetching repo details:', err);
+    return null;
+  }
+};
